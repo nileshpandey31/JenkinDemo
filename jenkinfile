@@ -1,11 +1,3 @@
-def runscript() {
-
-    bat """ 
-    
-    "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
-
-    """
-}
 
 pipeline {
     agent any
@@ -23,10 +15,11 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-            script {
+            bat """ 
+    
+    "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
 
-               runscript()
-            }
+    """
             }
         }
     }
