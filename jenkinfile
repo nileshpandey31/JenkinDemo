@@ -1,6 +1,6 @@
 def runscript() {
 
-    bat 'python Hellojenkin.py'
+    bat 'C:\Users\nilesh\AppData\Local\Programs\Python\Python38-32\python.exe Hellojenkin.py'
 }
 
 pipeline {
