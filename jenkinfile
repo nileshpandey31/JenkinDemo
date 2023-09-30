@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Stage 1') {
+            steps {
+              echo "Hi Nilesh"
+            }
+        }
+        stage('Confirm') {
+            steps {
+                input 'Proceed to next stage?'
+            }
+            
+        }
+        stage('Stage 2') {
+            steps {
+              python Hellojenkin.py
+            }
+        }
+    }
+}
