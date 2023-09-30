@@ -1,6 +1,6 @@
 def runscript() {
 
-    sh 'python Hellojenkin.py'
+    bat 'python Hellojenkin.py'
 }
 
 pipeline {
