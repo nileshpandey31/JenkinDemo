@@ -1,6 +1,6 @@
 def runscript() {
 
-    sh 'python Hellojenkin.py'
+    sh " 'C:\Users\nilesh\AppData\Local\Programs\Python\Python38-32\python.exe' Hellojenkin.py"
 }
 
 pipeline {
