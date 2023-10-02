@@ -23,13 +23,11 @@ pipeline {
                              "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
                         """
                         }
-                    else if (env.build == 'no') 
+                    else (env.build == 'no') 
                         {
-                        echo 'Hello from no'
+                        echo 'No build was selected hence skipping python file execution'
                         }
-                    else {
-                       echo 'Hello'
-                        }
+                    
                     }
             }
         }
