@@ -16,7 +16,7 @@ pipeline {
                         }
                     else if (env.build == 'no') 
                         {
-                        echo 'Hello from yes'
+                        echo 'Hello from no'
                         }
                     else {
                        echo 'Hello'
