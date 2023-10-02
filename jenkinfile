@@ -15,25 +15,13 @@ pipeline {
         }
         stage('Stage 2') {
             steps {
-           
+            bat """ 
 
-            echo "${build}"
-            if(env.build=='yes')
-            {
-                             bat """ 
+            echo ${build}
     
     "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
 
     """
-
-            }
-            else
-            {
-                 echo "No build is selected hence skipping python script execution"
-
-            }
-             
-            
             }
         }
     }
