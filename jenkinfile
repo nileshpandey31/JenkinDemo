@@ -20,7 +20,7 @@ pipeline {
 
             echo ${build}
 
-            if (env.build == 'yes')
+            if (${build}== 'yes')
             {
     
     "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
