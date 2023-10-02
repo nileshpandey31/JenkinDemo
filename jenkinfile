@@ -29,7 +29,7 @@ pipeline {
             }
             else
             {
-                echo "no build was selected hence skipping script execution"
+                echo ${build}
             }
             }
         }
