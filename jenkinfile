@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hello') {
             steps {
-                script {
+                
                     if (env.build == 'yes') 
                         {
                         bat """
@@ -23,7 +23,7 @@ pipeline {
                     else {
                        echo 'Hello'
                         }
-                    }
+                    
             }
         }
         stage('Confirm') {
