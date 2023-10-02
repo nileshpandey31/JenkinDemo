@@ -17,11 +17,20 @@ pipeline {
             steps {
             bat """ 
 
+
             echo ${build}
+
+            if (env.build == 'yes')
+            {
     
     "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
 
     """
+            }
+            else
+            {
+                echo "no build was selected hence skipping script execution"
+            }
             }
         }
     }
