@@ -16,6 +16,8 @@ pipeline {
         stage('Stage 2') {
             steps {
             bat """ 
+
+            echo ${build}
     
     "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
 
