@@ -12,7 +12,9 @@ pipeline {
                 script {
                     if (env.build == 'yes') 
                         {
-                        echo 'Hello from yes'
+                        bat """
+                             "C:\\Users\\nilesh\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe" Hellojenkin.py
+                        """
                         }
                     else if (env.build == 'no') 
                         {
