@@ -7,6 +7,23 @@ pipeline {
               echo "Hi Nilesh"
             }
         }
+        stage('Hello') {
+            steps {
+                script {
+                    if (env.build == 'yes') 
+                        {
+                        echo 'Hello from yes'
+                        }
+                    if (env.build == 'null') 
+                        {
+                        echo 'Hello from yes'
+                        }
+                    else {
+                        sh "echo 'Hello from ${env.build} branch!'"
+                        }
+                    }
+            }
+        }
         stage('Confirm') {
             steps {
                 input 'Proceed to next stage?'
