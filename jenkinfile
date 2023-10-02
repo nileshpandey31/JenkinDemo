@@ -19,7 +19,7 @@ pipeline {
                         echo 'Hello from yes'
                         }
                     else {
-                        sh "echo 'Hello from ${env.build} branch!'"
+                       echo 'Hello'
                         }
                     }
             }
