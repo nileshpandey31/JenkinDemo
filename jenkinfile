@@ -14,7 +14,7 @@ pipeline {
                         {
                         echo 'Hello from yes'
                         }
-                    if (env.build == 'null') 
+                    else if (env.build == 'no') 
                         {
                         echo 'Hello from yes'
                         }
